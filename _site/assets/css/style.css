@@ -1,0 +1,93 @@
+.current {
+  color: green; }
+
+body {
+  background-color: #ecec5b; }
+
+.grid2p {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2em; }
+
+.navbar {
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.637); }
+
+.navbar a {
+  padding: 1em;
+  display: block;
+  background-color: cornflowerblue; }
+
+.size {
+  width: 140%; }
+
+@media screen and (min-width: 460px) {
+  .navbar a {
+    padding: 1em;
+    display: inline;
+    background-color: cornflowerblue; }
+
+  .size {
+    width: 140%; } }
+@media screen and (min-width: 460px) and (min-width: 700px) {
+  .grid2p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em; }
+
+  .grid1to3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr; }
+
+  .size {
+    width: 140%; } }
+@media screen and (min-width: 460px) and (min-width: 700px) and (min-width: 1000px) {
+  .size {
+    width: 140%; } }
+.icon-home:before {
+  content: "\e900"; }
+
+.icon-images:before {
+  content: "\e90e"; }
+
+.icon-about:before {
+  content: "\e923"; }
+
+.icon-posts:before {
+  content: "\e92e"; }
+
+.icon-staff:before {
+  content: "\e972"; }
+
+.icon-youtube:before {
+  content: "\ea9d"; }
+
+.icon-github:before {
+  content: "\eab0"; }
+
+.icon-soundcloud:before {
+  content: "\eac3"; }
+
+.icon-pinterest:before {
+  content: "\ead1"; }
+
+.current1:before {
+  color: green;
+  content: "\e900"; }
+
+.current2:before {
+  color: green;
+  content: "\e90e"; }
+
+.current3:before {
+  color: green;
+  content: "\e923"; }
+
+.current4:before {
+  color: green;
+  content: "\e92e"; }
+
+.current5:before {
+  color: green;
+  content: "\e972"; }

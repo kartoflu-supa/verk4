@@ -1,0 +1,21 @@
+---
+title: Blog
+---
+<h1>Latest Posts</h1>
+
+
+<section class="grid2p">
+  <div>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <img src="assets/images/rick.svg" class="size">
+  </div>
+</section>

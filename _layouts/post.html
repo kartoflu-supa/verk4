@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+<p>
+  {{ page.date | date_to_string }}
+  {% assign author = site.authors | where: 'short_name', page.author | first %}
+  {% if author %}
+    - <a href="{{ author.url | relative_url }}">{{ author.name }}</a>
+  {% endif %}
+</p>
+<section class="grid2p">
+  <div>
+    {{ content }}
+  </div>
+  <div>
+    {% if page.url == "/2018/08/22/kiwifruit.html" %}
+      <img src="{{"/assets/images/kiwifruit.jpg"|relative_url}}"  alt="kiwi">  
+    {% endif %}
+  
+    {% if page.url == "/2018/08/20/bananas.html" %}
+      <img src="{{"/assets/images/banana.jpg"|relative_url}}" alt="banana">  
+    {% endif %}
+  
+    {% if page.url == "/2018/08/21/apples.html" %}
+      <img src="{{"/assets/images/apple.jpg"|relative_url}}" alt="apple">  
+    {% endif %}
+  </div>
+</section>
