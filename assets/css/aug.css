@@ -41,13 +41,13 @@ a{
 
 .strik{
     animation-name: hreyfa;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     width: 100px;
     height: 100%;
     position: absolute;
-    left: -25%;
+    left: -100%;
     top: 0%;
     background-color: rgba(255, 0, 255, 70%);
 }
@@ -69,7 +69,7 @@ a{
 }
 
 @keyframes hreyfa{
-    0%{left: -25%;}
-    50%{left: 125%;}
-    100%{left: -25%;}
+    0%{left: -100%;}
+    50%{left: 200%;}
+    100%{left: -100%;}
 }

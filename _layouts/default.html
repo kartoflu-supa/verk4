@@ -9,7 +9,14 @@
   </head>
   <body>
     <div>
-    {% include navigation.html %}
+      <div class="dropdown">
+        <p class="nav">
+          nav
+        </p>
+        <div class="dropdown-content">
+         {% include navigation.html %}
+        </div>
+      </div>
     {{ content }}
     </div>
     <section class="auglysing">
